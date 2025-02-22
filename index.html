@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python for CTF Resources</title>
+    <title>CTF Solver's Toolkit</title>
     <link rel="icon" type="image/webp" href="this-cute-pic-of-ice-bear-v0-9fsyn8xn5sz91.webp">
     <style>
         body {
@@ -30,6 +30,12 @@
         h1 img {
             width: 40px;
             height: 40px;
+        }
+        h2 {
+            color: #1e3a8a;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.8em;
         }
         ul {
             list-style: none;
@@ -59,6 +65,11 @@
             text-decoration: underline;
             color: #3b82f6;
         }
+        li p {
+            margin: 5px 0 0;
+            color: #555;
+            font-size: 0.95em;
+        }
         footer {
             text-align: center;
             padding: 10px;
@@ -71,36 +82,89 @@
     </style>
 </head>
 <body>
-    <h1>Python for CTF - Resource Links</h1>
+    <h1>CTF Solver's Toolkit</h1>
+
+    <h2>Websites</h2>
     <ul>
-        <li><a href="https://www.codecademy.com/catalog/language/python">Python for Beginners - Codecademy</a></li>
-        <li><a href="https://ctf101.org/cryptography/overview/">Cryptography for CTF - CTF 101</a></li>
-        <li><a href="https://docs.pwntools.com/en/stable/">Pwntools Documentation</a></li>
-        <li><a href="https://www.python.org/about/gettingstarted/">Python for Beginners - Python.org</a></li>
-        <li><a href="https://charcharbinks.com/post/ctf_crypto_for_beginners/">CTF Cryptography for Beginners</a></li>
-        <li><a href="https://github.com/Gallopsled/pwntools">Pwntools GitHub Repository</a></li>
-        <li><a href="https://www.w3schools.com/python/">Python Tutorial - W3Schools</a></li>
-        <li><a href="https://cryptohack.org/challenges/ctf-archive/">CTF Archive Challenges - CryptoHack</a></li>
-        <li><a href="https://pypi.org/project/pwntools/">Pwntools on PyPI</a></li>
-        <li><a href="https://www.youtube.com/playlist?list=PLlrxD0HtieHhS8VzuMCfQD4uJ9yne1mE6">Python for Beginners - YouTube Playlist</a></li>
-        <li><a href="https://www.reddit.com/r/cryptography/comments/1b7hujd/ctf_practice/">CTF Practice - Reddit Discussion</a></li>
-        <li><a href="https://python3-pwntools.readthedocs.io/">Pwntools Documentation (Read the Docs)</a></li>
-        <li><a href="https://wiki.python.org/moin/BeginnersGuide">Beginner's Guide to Python</a></li>
-        <li><a href="https://ctfacademy.github.io/crypto/index.htm">CTF Academy - Cryptography</a></li>
-        <li><a href="https://guyinatuxedo.github.io/02-intro_tooling/pwntools/index.html">Scripting with Python Pwntools</a></li>
-        <li><a href="https://www.reddit.com/r/learnpython/comments/11kcko1/best_way_to_learn_python/">Best Way to Learn Python - Reddit Discussion</a></li>
-        <li><a href="https://www.youtube.com/watch?v=dWfUxWCwX9k">Solving CTF Challenges: Cryptography - YouTube Video</a></li>
-        <li><a href="https://learn.microsoft.com/en-us/shows/intro-to-python-development/">Python for Beginners - Microsoft Learn</a></li>
-        <li><a href="https://infosecwriteups.com/unlocking-with-cryptography-ctf-newbies-bbe042dc97e4">Unlocking with Cryptography - CTF Newbies</a></li>
-        <li><a href="https://docs.pwntools.com/en/dev/asm.html">Pwnlib.asm — Assembler Functions</a></li>
-        <li><a href="https://www.youtube.com/watch?v=eWRfhZUzrAc">Python for Beginners – Full Course [Programming Tutorial] - YouTube Video</a></li>
-        <li><a href="https://www.youtube.com/watch?v=FcBDfW30fSw">Introduction to Cryptography Challenges - YouTube Video</a></li>
-        <li><a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc&vl=en">Python Full Course for Beginners - YouTube Video</a></li>
-        <li><a href="https://github.com/alex-bellon/ctf-challenges">CTF Challenges Repository</a></li>
-        <li><a href="https://rohit170590.medium.com/ctf-challenges-cryptography-101-cc56156662ca">CTF Challenges: Cryptography-101</a></li>
+        <li><a href="https://ctftime.org">CTFtime</a>
+            <p>A central hub for CTF enthusiasts, providing event schedules, team rankings, and writeups from past competitions. Use it to study solutions, track upcoming challenges, or join a team.</p></li>
+        <li><a href="https://gchq.github.io/CyberChef">CyberChef</a>
+            <p>A versatile web tool from GCHQ for encoding, decoding, encrypting, and data manipulation. Ideal for quick cryptography tasks—like base64 decoding or XOR operations—without writing code.</p></li>
+        <li><a href="https://dcode.fr">dCode</a>
+            <p>A collection of online solvers for ciphers (e.g., Caesar, Vigenère, RSA) and tools for hash cracking or frequency analysis. Perfect for identifying and breaking obscure encodings in crypto challenges.</p></li>
+        <li><a href="https://exploit-db.com">Exploit-DB</a>
+            <p>A searchable archive of exploits and proof-of-concept code. Great for finding known vulnerabilities in software encountered during binary or web exploitation tasks.</p></li>
+        <li><a href="https://book.hacktricks.xyz">HackTricks</a>
+            <p>An extensive, regularly updated guide to hacking techniques, tools, and CTF strategies. Covers everything from privilege escalation to steganography—use it as a quick reference during challenges.</p></li>
+        <li><a href="https://aperisolve.fr">Aperi’Solve</a>
+            <p>An online steganography analyzer that runs tools like zsteg, steghide, and binwalk on uploaded images. Upload a suspicious image to extract hidden data or flags effortlessly.</p></li>
+        <li><a href="https://cryptii.com">Cryptii</a>
+            <p>A modular web tool for encoding, decoding, and encrypting text. Its pipeline interface lets you chain operations (e.g., ROT13 then base64), making it handy for layered crypto puzzles.</p></li>
+        <li><a href="https://hashcat.net">Hashcat</a>
+            <p>The homepage for Hashcat, a high-performance password cracker. Download it to tackle hash-cracking challenges (e.g., MD5, SHA256) with GPU acceleration.</p></li>
+        <li><a href="https://pwnable.xyz">Pwnable.xyz</a>
+            <p>A platform offering binary exploitation and reverse engineering challenges. Practice ROP, buffer overflows, and more in a competitive environment.</p></li>
+        <li><a href="https://overthewire.org">OverTheWire</a>
+            <p>Wargames with hands-on challenges for Linux skills, binary exploitation, and networking. Start with the Bandit series to build foundational skills for CTF.</p></li>
+        <li><a href="https://tryhackme.com">TryHackMe</a>
+            <p>An interactive platform with CTF-style rooms for web, network, and forensics practice. Offers guided learning paths alongside standalone challenges.</p></li>
+        <li><a href="https://crackstation.net">CrackStation</a>
+            <p>A free online hash cracker for common types like MD5 and SHA1. Use it for quick lookups when you suspect a hash is from a known password list.</p></li>
+        <li><a href="https://stegonline.georgeom.net">StegOnline</a>
+            <p>A web-based steganography tool for analyzing and modifying images. Extract hidden data or tweak LSB values directly in your browser.</p></li>
+        <li><a href="https://ctflearn.com">CTFlearn</a>
+            <p>A beginner-to-advanced platform with community-submitted challenges and writeups. Great for practicing diverse skills and learning from others’ solutions.</p></li>
+        <li><a href="https://shell-storm.org/project/ROPgadget">ROPgadget</a>
+            <p>A tool (and site) for finding ROP gadgets in binaries. Download the script to automate gadget discovery for exploitation in pwn challenges.</p></li>
     </ul>
+
+    <h2>Python Tools</h2>
+    <ul>
+        <li><a href="/page/python.html">Python Learning Resources</a>
+        <li><a href="https://github.com/Gallopsled/pwntools">Pwntools</a>
+            <p>A CTF framework for exploit development, especially binary exploitation. Simplifies tasks like crafting payloads, interacting with remote services, and building ROP chains (<code>pip install pwntools</code>).</p></li>
+        <li><a href="https://github.com/Ciphey/Ciphey">Ciphey</a>
+            <p>An AI-driven tool that automatically identifies and decrypts encodings, ciphers, and hashes. Feed it garbled text, and it’ll crack it for you (<code>pip install ciphey</code>).</p></li>
+        <li><a href="https://github.com/angr/angr">angr</a>
+            <p>A binary analysis framework using symbolic execution to explore program paths. Use it to solve reverse engineering puzzles or find flags in complex binaries (<code>pip install angr</code>).</p></li>
+        <li><a href="https://github.com/Legrandin/pycryptodome">pycryptodome</a>
+            <p>A robust library for cryptographic operations (e.g., AES, RSA, SHA). Write custom scripts to encrypt, decrypt, or analyze crypto challenges (<code>pip install pycryptodome</code>).</p></li>
+        <li><a href="https://github.com/bwall/HashPump">hashpumpy</a>
+            <p>A tool for hash length extension attacks on algorithms like MD5 or SHA1. Exploit vulnerable hash-based authentication in web challenges (<code>pip install hashpumpy</code>).</p></li>
+        <li><a href="https://github.com/ius/rsatool">rsatool</a>
+            <p>A script to calculate RSA private keys from public parameters (e.g., n, e). Essential for RSA-based crypto challenges with weak keys (clone repo).</p></li>
+        <li><a href="https://github.com/hellman/xortool">xortool</a>
+            <p>A tool to analyze and crack multi-byte XOR ciphers by guessing key lengths and keys. Perfect for XOR-encrypted flags (<code>pip install xortool</code>).</p></li>
+        <li><a href="https://github.com/sqlmapproject/sqlmap">sqlmap</a>
+            <p>An automated tool for SQL injection attacks. Point it at a vulnerable web app to extract databases or bypass logins (clone repo).</p></li>
+        <li><a href="https://github.com/mpgn/padding-oracle-attack">Padding Oracle Exploit</a>
+            <p>A script to exploit padding oracle vulnerabilities in encryption. Decrypt ciphertexts in crypto challenges with misconfigured padding (clone repo).</p></li>
+        <li><a href="https://github.com/psf/requests">requests</a>
+            <p>A simple HTTP library for web exploitation. Craft custom requests, scrape pages, or automate interactions with web challenges (<code>pip install requests</code>).</p></li>
+        <li><a href="https://github.com/ReFirmLabs/binwalk">binwalk</a>
+            <p>A tool for analyzing and extracting data from binary files (e.g., firmware). Use it in forensics to uncover hidden files or flags (<code>pip install binwalk</code>).</p></li>
+        <li><a href="https://github.com/python-pillow/Pillow">Pillow</a>
+            <p>A library for image manipulation. Write scripts to analyze or modify images for steganography challenges (<code>pip install pillow</code>).</p></li>
+        <li><a href="https://github.com/cedricbonhomme/Stegano">stegano</a>
+            <p>A Python library for LSB steganography. Hide or extract data in images programmatically (<code>pip install stegano</code>).</p></li>
+        <li><a href="https://github.com/unicorn-engine/unicorn">unicorn</a>
+            <p>A CPU emulator for running and debugging binary code. Emulate instructions to understand obfuscated programs (<code>pip install unicorn</code>).</p></li>
+        <li><a href="https://github.com/capstone-engine/capstone">capstone</a>
+            <p>A disassembly framework for reverse engineering. Parse binary instructions for analysis or scripting (<code>pip install capstone</code>).</p></li>
+        <li><a href="https://github.com/xael/python-nmap">python-nmap</a>
+            <p>A Python wrapper for Nmap. Automate network scanning in challenges requiring port enumeration (<code>pip install python-nmap</code>).</p></li>
+        <li><a href="https://github.com/secdev/scapy">scapy</a>
+            <p>A packet manipulation tool for crafting, sending, and analyzing network traffic. Forge packets or sniff data in networking tasks (<code>pip install scapy</code>).</p></li>
+        <li><a href="https://github.com/countercept/python-exe-unpacker">pyinstaller-unpacker</a>
+            <p>A script to unpack PyInstaller-compiled Python executables. Reverse engineer packed binaries to find hidden logic (clone repo).</p></li>
+        <li><a href="https://pypi.org/project/beautifulsoup4">BeautifulSoup</a>
+            <p>A library for parsing HTML/XML. Scrape web pages or extract data from messy source code (<code>pip install beautifulsoup4</code>).</p></li>
+        <li><a href="https://github.com/Z3Prover/z3">z3-solver</a>
+            <p>A theorem prover for solving constraints. Use it for symbolic execution or cracking logic-based challenges (<code>pip install z3-solver</code>).</p></li>
+    </ul>
+
     <footer>
-        &copy; Jayesh 2025
+        © 2025 | Built for CTF Enthusiasts
     </footer>
 </body>
 </html>
